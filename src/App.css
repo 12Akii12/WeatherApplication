@@ -1,8 +1,15 @@
 .App {
+  display:flex;
   text-align: center;
+  justify-content: space-evenly;
   
 }
 
+@media (max-width: 990px) {
+  .App {
+    flex-direction: column;
+  }
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
