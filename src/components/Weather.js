@@ -12,7 +12,7 @@ function Weather() {
   async function weatherData(e) {
     e.preventDefault();
     if (form.city == "") {
-      alert("Add values");
+      alert("Please enter the city name...");
     } else {
       const data = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${form.city}&APPID=${APIKEY}`
